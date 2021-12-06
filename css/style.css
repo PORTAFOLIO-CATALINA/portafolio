@@ -1,0 +1,308 @@
+*{
+    margin: 2;
+    padding:2;
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Shippori Antique', sans-serif;
+}
+.rowFlex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.navFlex{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.navFlex li {list-style-type: none;
+padding: 30px;font-size: 20px; background: yellow;}
+.navFlex li a {text-decoration: none;}
+.navFlex__item1{order: 5;}
+.navFlex__item2{order: -1;}
+.navFlex__item3{order:-2;}
+.navFlex__item4{order:0;}
+
+.sectionFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+    width:100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+
+body{
+	overflow-x:visible;
+}
+
+.nav{
+    background:rgb(255, 255, 255);
+    height: 60px;
+    display:flex;
+    justify-content:space-around;
+    font-size: larger;
+}
+.nav li{
+    display: inline;
+}
+.nav_logo{
+    height: 100%;
+    background: white;   
+}
+
+.nav h1{
+display: inline;
+}
+
+.overflow {
+    width: 50%;
+    height: 300px;
+    overflow: scroll;
+    margin: auto;
+}
+
+.overflow_works {
+    width: 50%;
+    height: 300px;
+    overflow: scroll;
+    margin: 15px;
+   
+}
+
+.overflow_img {
+    margin: auto;
+    padding: 16px;
+
+}
+
+.subMenu {
+    font-size: 40px;
+    font-variant: small-caps;
+    list-style-type: upper-roman;
+
+}
+
+.subMenu li a {
+    color: black;
+}
+
+.hero_banner{
+    display: flex;
+}
+
+.contenido {
+    margin: 150px;
+    padding: 200px;
+    background-color: rgb(228, 228, 228);
+}
+
+.contenido h2{
+    font-size: 100px;
+    margin: 0px;
+    color: black;
+}
+
+h1{
+    color: rgb(3, 3, 3);
+    font-size: 40px;
+    text-align:left;
+    font-weight: bold;
+}
+
+.textos p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.textos dt {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+h2{
+    color:blue;
+    font-size: 23px;
+    text-align: justify;
+    font-weight:bold;
+}
+
+.bordesRedondeados{
+    border-radius: 30px;
+}
+.imgchica{
+    width: 600px;
+    float: right;
+}
+
+.h2Name{
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}
+
+.textoRojo{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.textoVerde{
+    color:rgb(8, 148, 43);
+    font-size: 20px;
+    text-align: justify;
+}
+.textoBlack{
+    color: black;
+    font-size: 15px;
+    text-align:start;
+    font-style:normal;
+}
+
+
+.alerta {
+	position: fixed;
+	right: 3px;
+    bottom: 3px;
+	width: 50px;
+	height: 50px;
+	background-color: blueviolet;
+    z-index: 9999999999999;
+}
+
+.tabla{
+    display: none;
+}
+
+
+.left_box {
+font-size: larger;
+float: left;
+width: 50%;
+height: 300px;
+background-color: rgb(228, 228, 228);
+}
+
+.right_box {
+font-size: larger;
+float:left;
+width: 50%;
+height: 200px;
+background-color:rgb(231, 255, 96);
+}
+
+.contacto {
+    background-color:rgb(210, 207, 226);
+    padding: 30px;
+    width: 100%;
+    float: left;
+    
+}
+
+.labels_contacto {
+padding-right: 40px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(140, 138, 243);
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cuadrado{
+    width: 200px;
+    height: 100px;
+    background:wheat;
+    /*trasiciones*/
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+}
+
+.cuadrado:hover{
+    width: 100px;
+    height: 200px;
+    background:blue;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 21px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-image:linear-gradient(to left, rgb(17, 0, 255), rgb(236, 218, 114));
+
+}
+
+.animate__animated {
+    float: left;
+    height: 40px;
+}
+
+.noticia_bounce{
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 700px) {
+   
+    .navFlex {
+        display: flex;
+        position: initial;
+        flex-direction: column;
+        text-align: center;
+        width: 150px;
+        padding-top: 153px;
+    }
+    .navFlex li {list-style-type: none;
+        padding: 10px;
+        font-size: 10px; 
+        background: yellow;
+
+    }
+
+    .contenido h2 {
+        font-size: smaller;
+    }
+
+    .contenido {
+        margin: auto;
+        width: 100%;
+        padding-top: 400px;
+        padding-left: 20px;
+        padding-right: 50px;
+        background-color: white;
+    }
+
+    .textos{
+        width: 100%;
+    }
+
+    .overflow {
+        overflow: visible;
+        height: 400px;
+        width: 100%;
+    }
+}
